@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+ body {
+    color: #333;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f7faff;
+    height: 100%;
+    -webkit-text-size-adjust: none;
+}
+.content h1 {
+  font-size: 25px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 21px;
+  margin-top: 2em;
+  border-bottom: 1px solid #edf2fc;
+  background-color: transparent;
+  width: 100%;
+}

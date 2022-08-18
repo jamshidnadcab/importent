@@ -483,108 +483,129 @@ Linux command line using <code>echo</code>, <code>openssl</code>, and <code>curl
 
 
     <h1>ENDPOINT A1</h1>
-<h2 id="test-connectivity">ASSETS   /assets</h2>
-<div class="highlight"><pre class="highlight plaintext"><code>GET /sapi/v1/ping</code></pre></div>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">--location</span> <span class="nt">--request</span> GET <span class="s1">'https://docs.google.com/document/d/1S4urpzUnO2t7DmS_1dc4EL4tgnnbTObPYXvDeBnukCg/edit#bookmark=kix.lzf008k5nm6o'</span></code></pre></div>
+<h2 id="test-connectivity">ASSETS  </h2>
+<div class="highlight"><pre class="highlight plaintext"><code>GET /sapi/A1/assets</code></pre></div>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">--location</span> <span class="nt">--request</span> GET <span class="s1">'https://order.aconomic.org/api/get-currency-data'</span></code></pre></div>
 <blockquote><p>Response:
   </p></blockquote>
   <div class="highlight"><pre class="highlight json-doc tab-json-doc"><code><span class="p">
   <span class="p">{"{"}</span>
-  <span class="nl">"BTC"</span>
+  <span class="nl">"status"</span>
   <span class="p">:</span>
+  <span class="w"></span>
+  <span class="s2">200</span>
+  <span class="p">,</span> <br/>
+  <span class="nl">"error"</span>
+  <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="s2">false</span>
+  <span class="p">,</span> <br/>
+  <span class="nl">"message"</span>
+  <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="s2"> "success"</span>
+  <span class="p">,</span> <br />
+  <span class="nl">"result"</span>
+  <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="p">{"["}</span>
+  <span class="w"> </span>
   <span class="p">{"{"}</span>
-  <span class="w">
-  </span>
-  <span class="nl">"name"</span>
+  <span class="s2">"name"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">"bitcoin"</span>
-  <span class="p">,</span>
-  <span class="nl"> "unified_cryptoasset_id"</span>
+  <span class="s2"> "XRP"</span>
+  <span class="p">,</span> <br />
+  <span class="nl">"symbol"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2"> "1"</span>
+  <span class="s2">"XRP"</span>
+  <span class="p">,</span> <br />
+  <span class="nl"> "id"</span>
+  <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="s2"> 52</span>
   <span class="p">,</span>
   <span class="nl">"can_withdraw"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">"true"</span>
-  <span class="p">,</span>
-  <span class="nl">  "can_deposit"</span>
+  <span class="s2">0</span> 
+  <span class="p">,</span> <br />
+  <span class="nl">"can_deposit"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">  "true"</span>
-  <span class="p">,</span>
-  <span class="nl"> "min_withdraw"</span>
+  <span class="s2">1</span>
+  <span class="p">,</span> <br />
+  <span class="nl">"min_withdraw"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2"> "0.01"</span>
-  <span class="p">,</span>
-  <span class="nl">  "max_withdraw "</span>
+  <span class="s2">10</span>
+  <span class="p">,</span> <br/>
+  <span class="nl"> "max_withdraw"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2"> "100"</span>
-  <span class="p">,</span>
-  <span class="nl">"name"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2"> "bitcoin"</span>
-  <span class="p">,</span>
-  <span class="nl">  "maker_fee"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">"0.01"</span>
-  <span class="p">,</span>
-  <span class="nl"> "taker_fee"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2"> "0.01"</span>
+  <span class="s2">10000</span>
   <span class="p">{"}"}</span>
-  <span class="p">,</span>
-  <span class="nl">"ETH"</span>
+  <span class="p">,</span> <br />
+  <span class="nl">"maker_fee"</span>
   <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="s2">0</span>
+  <span class="p">,</span> <br />
+  <span class="nl">"taker_fee"</span>
+  <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="s2">0</span>
+  <span class="p">{"}"}</span>
+  <span class="p">,</span> <br /> 
   <span class="p">{"{"}</span>
-  <span class="w">
-  </span>
   <span class="nl"> "name"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">"ethereum"</span>
-  <span class="p">,</span>
-  <span class="nl">  "unified_cryptoasset_id"</span>
+  <span class="s2">"TRON"</span>
+  <span class="p">,</span> <br />
+  <span class="nl">  "symbol"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">  "1027"</span>
-  <span class="p">,</span>
-  <span class="nl">  "can_withdraw"</span>
+  <span class="s2">  "TRX"</span>
+  <span class="p">,</span> <br />
+  <span class="nl">  "id"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">  "false"</span>
+  <span class="s2"> 1958</span>
   <span class="p">,</span>
-  <span class="nl">    "can_deposit"</span>
+  <span class="nl">"can_withdraw"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">  "false"</span>
-  <span class="p">,</span>
-  <span class="nl">  "min_withdraw"</span>
+  <span class="s2"> 1</span>
+  <span class="p">,</span> <br />
+  <span class="nl"> "can_deposit"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2"> "10.00"</span>
-  <span class="p">,</span>
-  <span class="nl">  "max_withdraw "</span>
+  <span class="s2">1</span>
+  <span class="p">,</span> <br />
+  <span class="nl">  "min_withdraw "</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">  "0.00"</span>
-  <span class="p">,</span>
-  <span class="nl">    "maker_fee"</span>
+  <span class="s2"> 10</span>
+  <span class="p">,</span> <br />
+  <span class="nl"> "max_withdraw"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2"> "0.01"</span>
-  <span class="p">,</span>
+  <span class="s2"> 10000</span>
+  <span class="p">,</span> <br />
+  <span class="nl">  "maker_fee"</span>
+  <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="s2">0</span>
+  <span class="p">,</span> <br />
   <span class="nl">  "taker_fee"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">"0.01"</span>
+  <span class="s2">0</span>
+  <span class="p">,</span> <br />
+  <span class="p">{"}"}</span>
+  <span class="p">{"]"}</span> <br />
   <span class="p">{"}"}</span>
 
 
@@ -593,186 +614,116 @@ Linux command line using <code>echo</code>, <code>openssl</code>, and <code>curl
     <p>The assets endpoint is to provide a detailed summary for each currency available on the exchange.</p>
 
     <h1>ENDPOINT A2</h1>
-<h2 id="test-connectivity">TICKER   /ticker</h2>
-<div class="highlight"><pre class="highlight plaintext"><code>GET /sapi/v1/ping</code></pre></div>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">--location</span> <span class="nt">--request</span> GET <span class="s1">'https://docs.google.com/document/d/1S4urpzUnO2t7DmS_1dc4EL4tgnnbTObPYXvDeBnukCg/edit#bookmark=kix.lzf008k5nm6o'</span></code></pre></div>
+<h2 id="test-connectivity">TICKER   </h2>
+<div class="highlight"><pre class="highlight plaintext"><code>GET /sapi/A2/ticker</code></pre></div>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">--location</span> <span class="nt">--request</span> GET <span class="s1">'https://order.aconomic.org/api/get-trade-data?currency_type=xrp&compare_currency=inr'</span></code></pre></div>
 <blockquote><p>Response:
   </p></blockquote>
   <div class="highlight"><pre class="highlight json-doc tab-json-doc"><code><span class="p">
-  <span class="p">{"{"}</span>
-  <span class="nl">"BTC_USDT"</span>
-  <span class="p">:</span>
-  <span class="p">{"{"}</span>
+  <span class="p">{"{"}</span> <br />
+  <span class="nl">"status"</span>
   <span class="w">
+  <span class="p">:</span>
+  <span class="p">{200}</span>
+  <span class="p">,</span> <br />
   </span>
-  <span class="nl">"base_id"</span>
+  <span class="nl">"error"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">"1"</span>
-  <span class="p">,</span>
-  <span class="nl"> "quote_id"</span>
+  <span class="s2">false</span>
+  <span class="p">,</span> <br />
+  <span class="nl"> "message"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2"> "825"</span>
-  <span class="p">,</span>
-  <span class="nl"> "last_price"</span>
+  <span class="s2"> "success"</span>
+  <span class="p">,</span> <br/>
+  <span class="nl"> "buy_stak"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">"10000"</span>
-  <span class="p">,</span>
-  <span class="nl">  "quote_volume"</span>
+  <span class="s2">{"["}{"]"}</span>
+  <span class="p">,</span> <br/>
+  <span class="nl">  "sell_stak"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">  "20000"</span>
-  <span class="p">,</span>
-  <span class="nl"> "base_volume"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2"> "2"</span>
-  <span class="p">,</span>
-  <span class="nl">   "isFrozen"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2"> "0"</span>
-  <span class="p">{"}"}</span>
-  <span class="p">,</span>
- 
+  <span class="s2"> {"["}{"]"}</span> <br />
   
-  <span class="nl">"LTC_BTC"</span>
-  <span class="p">:</span>
-  <span class="p">{"{"}</span>
-  <span class="w">
-  </span>
-  <span class="nl"> "base_id"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">"2"</span>
-  <span class="p">,</span>
-  <span class="nl">   "quote_id"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">  "1"</span>
-  <span class="p">,</span>
-  <span class="nl"> "last_price"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">  "0.00699900"</span>
-  <span class="p">,</span>
-  <span class="nl">  "base_volume"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">  "20028,526"</span>
-  <span class="p">,</span>
-  <span class="nl">  "quote_volume"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2"> "279594"</span>
-  <span class="p">,</span>
-  <span class="nl">   "isFrozen"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">  "0"</span>
   <span class="p">{"}"}</span>
-  <span class="p">,</span>
-  <span class="nl">"BNB_BTC"</span>
-  <span class="p">:</span>
-  <span class="p">{"{"}</span>
-  <span class="w">
-  </span>
-  <span class="nl"> "base_id"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">"1839"</span>
-  <span class="p">,</span>
-  <span class="nl">   "quote_id"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">  "1"</span>
-  <span class="p">,</span>
-  <span class="nl"> "last_price"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">  "0.00699900"</span>
-  <span class="p">,</span>
-  <span class="nl">  "base_volume"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">  "53819"</span>
-  <span class="p">,</span>
-  <span class="nl">  "quote_volume"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2"> "99.3459"</span>
-  <span class="p">,</span>
-  <span class="nl">   "isFrozen"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2">  "0"</span>
-    <span class="p">{"}"}</span>
+  
 </span><span class="w"></span></code></pre></div>
     <p>The ticker endpoint is to provide a 24-hour pricing and volume summary for each market pair available on the exchange</p>
 
     <h1>ENDPOINT A3</h1>
-<h2 id="test-connectivity">ORDERBOOK   /orderbook/market_pair</h2>
-<div class="highlight"><pre class="highlight plaintext"><code>GET /sapi/v1/ping</code></pre></div>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">--location</span> <span class="nt">--request</span> GET <span class="s1">'https://docs.google.com/document/d/1S4urpzUnO2t7DmS_1dc4EL4tgnnbTObPYXvDeBnukCg/edit#bookmark=kix.ojdax1m5sg58'</span></code></pre></div>
+<h2 id="test-connectivity">ORDERBOOK   </h2>
+<div class="highlight"><pre class="highlight plaintext"><code>GET /sapi/A3/orderbook/market_pair</code></pre></div>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">--location</span> <span class="nt">--request</span> GET <span class="s1">'https://order.aconomic.org/api/get-order-data?currency_type=xrp&compare_currency=inr'</span></code></pre></div>
 <blockquote><p>Response:
   </p></blockquote>
   <div class="highlight"><pre class="highlight json-doc tab-json-doc"><code><span class="p">
-  <span class="p">{"{"}</span>
-  <br/>
-  <span class="nl">"timestamp"</span>
+  <span class="p">{"{"}</span> <br />
+  <span class="nl">"status"</span>
+  <span class="w">
   <span class="p">:</span>
-  <span class="nl">"1585177482652"</span>
-  <span class="p">,</span>
-  <br/>
-  <span class="nl">"bids"</span><span class="p">:</span><span class="p">{"["}</span> <br/><span class="p">{"["}</span><span class="nl"> "12462000"</span><span class="p">,</span><span class="nl">  "0.04548320"</span><span class="p">{"]"}</span><span class="p">,</span><br/>
-  <br/><span class="p">{"["}</span><span class="nl">"12457000"</span><span class="p">,</span><span class="nl">   "3.00000000"</span><span class="p">{"]"}</span><span class="p">,</span><br/><span class="p">{"]"}</span><span class="p">,</span>
-  <span class="nl">"asks"</span><span class="p">:</span><span class="p">{"["}</span> <span class="nl">"12506000"</span><span class="p">,</span><span class="nl">  "2.73042000"</span><span class="p">{"]"}</span><span class="p">,</span><br/>
-  <span class="p">{"["}</span> <span class="nl">"12508000"</span><span class="p">,</span><span class="nl">"0.33660000"</span><span class="p">{"]"}</span><br/><span class="p">{"]"}</span><br/><span class="p">{"}"}</span>
-  </span><span class="w"></span></code></pre></div>
+  <span class="p">{200}</span>
+  <span class="p">,</span> <br />
+  </span>
+  <span class="nl">"error"</span>
+  <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="s2">false</span>
+  <span class="p">,</span> <br />
+  <span class="nl"> "message"</span>
+  <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="s2"> "success"</span>
+  <span class="p">,</span> <br/>
+  <span class="nl"> "buy_stak"</span>
+  <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="s2">{"["}{"]"}</span>
+  <span class="p">,</span> <br/>
+  <span class="nl">  "sell_stak"</span>
+  <span class="p">:</span>
+  <span class="w"> </span>
+  <span class="s2"> {"["}{"]"}</span> <br />
+  
+  <span class="p">{"}"}</span>
+  
+</span><span class="w"></span></code></pre></div>
     <p>The order book endpoint is to provide a complete level 2 order book {"("}arranged by best asks/bids{")"} with full depth returned for a given market pair.</p>
     <h1>ENDPOINT A4</h1>
-<h2 id="test-connectivity">TRADES   /trades/market_pair</h2>
-<div class="highlight"><pre class="highlight plaintext"><code>GET /sapi/v1/ping</code></pre></div>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">--location</span> <span class="nt">--request</span> GET <span class="s1">'https://docs.google.com/document/d/1S4urpzUnO2t7DmS_1dc4EL4tgnnbTObPYXvDeBnukCg/edit#bookmark=kix.9sxaz61ixguo'</span></code></pre></div>
+<h2 id="test-connectivity">TRADES   </h2>
+<div class="highlight"><pre class="highlight plaintext"><code>GET /sapi/A4/trades/market_pair</code></pre></div>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">--location</span> <span class="nt">--request</span> GET <span class="s1">'https://order.aconomic.org/api/get-trade-data?currency_type=xrp&compare_currency=inr'</span></code></pre></div>
 <blockquote><p>Response:
   </p></blockquote>
-
   <div class="highlight"><pre class="highlight json-doc tab-json-doc"><code><span class="p">
-  <span class="p">{"["}</span> <br/>
-  <span class="p">{"{"}</span> <br/>
+  <span class="p">{"{"}</span> <br />
+  <span class="nl">"status"</span>
   <span class="w">
+  <span class="p">:</span>
+  <span class="p">{200}</span>
+  <span class="p">,</span> <br />
   </span>
-  <span class="nl">"trade_id"</span>
+  <span class="nl">"error"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">"3523643"</span>
-  <span class="p">,</span>
-  <span class="nl"> "price"</span>
+  <span class="s2">false</span>
+  <span class="p">,</span> <br />
+  <span class="nl"> "message"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2"> "0.01"</span>
-  <span class="p">,</span>
-  <span class="nl">  "base_volume"</span>
+  <span class="s2"> "success"</span>
+  <span class="p">,</span> <br/>
+  <span class="nl"> "buy_stak"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">"569000"</span>
-  <span class="p">,</span>
-  <span class="nl">  "quote_volume"</span> <br/>
+  <span class="s2">{"["}{"]"}</span>
+  <span class="p">,</span> <br/>
+  <span class="nl">  "sell_stak"</span>
   <span class="p">:</span>
   <span class="w"> </span>
-  <span class="s2">  "0.01000000"</span>
-  <span class="p">,</span>
-  <span class="nl"> "timestamp"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2"> "1585177482652"</span>
-  <span class="p">,</span>
-  <span class="nl">   "type"</span>
-  <span class="p">:</span>
-  <span class="w"> </span>
-  <span class="s2"> "sell"</span>
+  <span class="s2"> {"["}{"]"}</span> <br />
+  
   <span class="p">{"}"}</span>
   
 </span><span class="w"></span></code></pre></div>
